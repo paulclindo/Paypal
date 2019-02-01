@@ -1,0 +1,42 @@
+/******************** Animations */
+.fadeIn{
+  animation: fadeIn 4s both;
+}
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.fadeInDown{
+  animation: fadeInDown 1s both;
+}
+
+@keyframes fadeInDown {
+  from{
+    opacity: 0;
+    transform: translate3d(0,-100%,0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
+
+.fadeInUp{
+  animation: fadeInUp 1s both;
+}
+
+@keyframes fadeInUp {
+  from{
+    opacity: 0;
+    transform: translate3d(0,100%,0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}

@@ -1,0 +1,91 @@
+@media (min-width: 768px) and (max-width: 1425px) {
+  .products{
+    max-height: none;
+  }
+  .product{
+    margin-top: -175px;
+  }
+  .opinions_container{
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .opinions_wrapper{
+    width: 365px;
+    margin: 20px 0;
+  }
+
+
+}
+
+@media (min-width: 426px) and (max-width: 767px){
+  .details_section{
+    margin: 0 50px;
+  }
+  .products{
+    max-height: none;
+    padding:initial;
+  }
+  .product{
+    margin-top: -87px;
+  }
+  .opinions_container{
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .opinions_wrapper{
+    width: 300px;
+    margin: 20px 0;
+  }
+  .opinions_details{
+    padding: 16px;
+  }
+  .product.content{
+    height: auto;
+  }
+
+
+}
+
+
+@media (min-width: 320px) and (max-width: 425px) {
+.products{
+  display: inherit;
+  max-height: initial;
+  padding: inherit;
+}
+.product{
+  margin-top: auto;
+  width: auto;
+}
+.main_section{
+  padding: 4%;
+}
+.details_section{
+  margin: inherit;
+  padding: 20px;
+  border-bottom: 1px black solid;
+}
+.card_container{
+  display: inherit;
+  height: inherit;
+}
+.card_wrapper{
+  width: auto;
+  margin: 10px;
+  /* margin: 10px 100px; */
+}
+.opinions_section{
+  padding: 15px;
+  margin:auto;
+}
+.opinions_container{
+  display: inherit;
+  height: auto;
+}
+.opinions_wrapper{
+  width: auto;
+  margin: 25px;
+}
+
+
+}

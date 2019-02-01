@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+/* --------- Variables */
+:root{
+  --green-color: #7acc2d;
+  --white-color: white;
+  --black-color: #313337;
+  /* Espaciado */
+  --space: 16px;
+  /* Tipography */
+  --normal: 12px;
+  /* Box shadow */
+  --box:  0px 0 2px 1px #e6e5e9;
+}
+/* --------- Variables */
+
+
+
+html, body {
+  background: #f9f9f9;
+  padding:0px;
+  margin:0;
+  font-size: var(--normal);
+  font-family: 'Open Sans', sans-serif;
+}
+nav{
+  background-color: var(--green-color);
+  padding: var(--space);
+  color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+nav ul {
+  display: flex;
+}
+nav li{
+  padding-left: 20px;
+  list-style: none;
+}
+nav li a {
+  margin: 0 20px;
+  font-weight: bold;
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+nav li a:hover{
+  color:var(--white-color);
+}
+label{
+  font-size: var(--normal);
+}
+/**************************** Main section */
+section{
+  /* height: 100vh; */
+  margin:0;
+  padding:0;
+  /* border:1px solid black; */
+}
+
+.main_section{
+  padding: 8%;
+  text-align: center;
+}
+.products{
+  background-image: url('../images/curve.png');
+  background-size: cover;
+  background-position: center top;
+  max-height: 50px;
+  padding: 12%;
+  display: flex;
+  justify-content: center;
+}
+.product{
+  padding: var(--space);
+  margin-top: -320px;
+  width: 355px;
+}
+.product .content{
+  background-color: white;
+  padding: 15px;
+  box-shadow:var(--box);
+  height: 400px;
+  text-align:justify;
+  display:flex;
+  flex-direction: column;
+  align-items:  center;
+  justify-content: center;
+  border: 0 25px;
+}
+.img_content{
+  margin-bottom: 10%;
+  text-align: center;
+}
+.content p{
+  margin: 25px;
+}
+.main_button{
+  background: var(--green-color);
+  width: 100%;
+  padding: 15px;
+  font-size: 17px;
+  color:white;
+  border: 0;
+  cursor:pointer;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+.main_button:hover{
+  background-color: #5e9e22;
+}
+/* *************************Prodcut section */
+.details_section{
+  margin: 0 150px;
+  /* height: 50vh; */
+  /* padding: 90px; */
+}
+.card_container{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70vh;
+}
+.card_image{
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
+.card_image img{
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  position: absolute;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right:0;
+}
+.card_wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  padding: 25px;
+}
+/* ************************Empieza opinions section */
+.opinions_section{
+  margin: 0 50px;
+  /* height: 50vh; */
+
+  /* padding: 90px; */
+}
+.opinions_container{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70vh;
+}
+.opinions_wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 500px;
+  box-shadow: var(--box);
+  justify-content: space-around;
+}
+.opinions_image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right:0;
+}
+.opinions_image{
+  width: 100%;
+  height:inherit;
+  position: relative;
+}
+.opinions_details{
+  padding:25px;
+}
+.title-section{
+text-align: center;
+}
+/* *****************************footer */
+.footer{
+  background-color: rgba(0, 0, 0, 0.88);
+  height: 60px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--white-color);
+  margin:0;
+}
+.footer div{
+  margin: 0 60px;
+}
+
+.footer div a{
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+
+
+/********************************* Ventas */
+.modulo_pago{
+  background: var(--white-color);
+  box-shadow: var(--box);
+  padding: 10px;
+}
+.buying{
+
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 85.8vh;
+
+}
+.modulo_pago_images{
+  max-width: 150px;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+.data{
+  margin-top: 10px;
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid var(--black-color);
+  box-sizing: border-box;
+}
+
+.modulo_pago input{
+  margin:10px auto;
+}
+
+/*************************** Detalles de productos */
+
+.products_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.images_product{
+  width: 100%;
+}
+
+.images_product img{
+  width: 194.5px;
+  height: 194.5px;
+}
